@@ -429,18 +429,6 @@ function HomeSection({ onNavigate, addToCart, onSelectTutorial }: { onNavigate: 
         </div>
       </section>
 
-      {/* Stats Section */}
-      <section className="py-20 border-y border-neutral-200 dark:border-neutral-800">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
-            <StatItem number="50+" label="Program Website" />
-            <StatItem number="100+" label="Tutorial Gratis" />
-            <StatItem number="5K+" label="Siswa Terdaftar" />
-            <StatItem number="4.9" label="Rating Kepuasan" />
-          </div>
-        </div>
-      </section>
-
       {/* Featured Programs */}
       <section className="py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -569,15 +557,6 @@ function HomeSection({ onNavigate, addToCart, onSelectTutorial }: { onNavigate: 
           </form>
         </div>
       </section>
-    </div>
-  );
-}
-
-function StatItem({ number, label }: { number: string, label: string }) {
-  return (
-    <div className="text-center">
-      <div className="text-4xl md:text-5xl font-bold mb-2">{number}</div>
-      <div className="text-neutral-500 font-medium">{label}</div>
     </div>
   );
 }
